@@ -1,0 +1,87 @@
+body {
+    background-color: #E6E6FA;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.tableau {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    max-width: 800px; /* Keeps the outer card uniform with the others */
+    box-sizing: border-box;
+    border-radius: 6px;
+    overflow-x: auto; /* Adds a clean scrollbar inside the card if the chart is still slightly too wide */
+}
+
+.tableau-container {
+    width: 100%;
+    max-width: 100%;
+    transform: scale(0.85); /* Shrinks the chart by 15% */
+    transform-origin: top center; /* Keeps the chart centered while shrinking */
+    margin-bottom: -200px; /* Cleans up the empty blank space caused by shrinking */
+}
+
+
+.intro {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.lists {
+    background-color: #F5F5F5;
+    margin: 20px;
+    padding: 20px;
+}
+
+.teams {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.video {
+    background-color: #F5F5F5;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.app-link {
+    background-color: #F5F5F5;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #003366;
+}
+
+img {
+    border: 3px solid black;
+    max-width: 100%; 
+    height: auto;
+}

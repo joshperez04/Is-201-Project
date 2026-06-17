@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formula 1 Scratch Page</title>
+
+    <link rel="stylesheet" href="scratch.css">
+
+    <!-- This style makes sure your video resizes perfectly on mobile screens -->
+    <style>
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 560px; /* Limits size on large computer screens */
+            padding-bottom: 56.25%; /* Keeps the perfect 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin: 0 auto; /* Centers the video box */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Formula 1: My Favorite Sport</h1>
+
+        <a href="index.html">Home</a> |
+        <a href="aboutme.html">About Me</a> |
+        <a href="resume.html">Resume</a> |      
+        <a href="scratch.html">Formula 1 Page</a>
+
+        <br><br>
+
+        <a href="#teams">Jump to Favorite Teams</a>
+    </div>
+
+    <div class="intro">
+        <h2>Why I Love Formula 1</h2>
+
+        <p>
+            Formula 1 is my favorite sport because it combines speed,
+            technology, strategy, and competition. Every race is different,
+            and teams constantly work to improve their cars throughout the season.
+        </p>
+
+        <img src="images/f1.png" alt="Formula 1 Car" width="500">
+    </div>
+
+    <div class="lists">
+        <h2>Top 3 Favorite Drivers</h2>
+
+        <ol>
+            <li>Kimi Antonelli
+                <ul>
+                    <li>Mercedes Driver</li>
+                    <li>Young Formula 1 Talent</li>
+                    <li>Won multiple junior championships</li>
+                </ul>
+            </li>
+
+            <li>Max Verstappen
+                <ul>
+                    <li>Red Bull Racing Driver</li>
+                    <li>Multiple World Champion</li>
+                    <li>One of the most aggressive and dominant drivers</li>
+                </ul>
+            </li>
+
+            <li>Daniel Ricciardo
+                <ul>
+                    <li>Known as 'The Honey Badger'</li>
+                    <li>Famous for late-braking overtakes and his big smile</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="teams" id="teams">
+
+        <h2>Favorite Teams</h2>
+
+        <p>
+            Mercedes has always been one of my favorite teams because of
+            their success, engineering excellence, and current driver lineup.
+        </p>
+
+        <img src="images/mercedes.jpg" alt="Mercedes F1 Car" width="500">
+
+    </div>
+
+    <div class="video">
+
+        <h2>Formula 1 Video</h2>
+    
+        <!-- YouTube Video Container (Restored with your unique link) -->
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/Q-jjZMMxbZs?si=B54E6oWOO84lt3-2" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+
+
+    <div class="tableau">
+
+        <h2>Formula 1 Tableau Visualization</h2>
+
+        <div class="tableau-container">
+            <!-- Restored your unique Tableau Track Map info -->
+            <div class='tableauPlaceholder' id='viz1781720223232' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Formula 1 Tracks ' src='https://public.tableau.com/static/images/MJ/MJ438MXZW/1_rss.png' style='border: none' />
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> 
+                    <param name='path' value='shared/MJ438MXZW' /> 
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/MJ/MJ438MXZW/1.png' /> 
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>                
+            <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1781720223232');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                
+                /* This forces the embedded graph to match your 800px card width instead of expanding to 1700px */
+                if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height='600px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height='500px';} else { vizElement.style.width='100%';vizElement.style.height='400px';}                     
+                
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+        </div>
+
+    </div>
+
+
+    <div class="app-link">
+
+        <h2>F1 Team Guessing Game</h2>
+
+        <p>
+            Click below to test your Formula 1 knowledge.
+        </p>
+
+        <a href="f1quiz.html">Play the F1 Quiz</a>
+
+    </div>
+
+</body>
+
+</html>
